@@ -76,6 +76,7 @@ button:hover{
 
 .section{
   padding:80px 10%;
+  scroll-margin-top:100px;
 }
 
 .section h2{
