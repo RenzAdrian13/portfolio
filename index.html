@@ -1,82 +1,77 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
-
 </head>
+
 <body>
-    
+
     <nav>
         <h1 class="logo">Portfolio</h1>
 
-         <div class="menu-toggle" onclick="toggleMenu()">
-            ☰
+        <div class="menu-toggle" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
         </div>
 
         <ul id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section class="hero">
         <div class="hero-text">
-            <h1>Hello, I'm Renz Adrian</h1>
-            <p>A beginner web developer & Vibe Coder.</p>
-
-            <button>Hire Me</button>
+        <h1>Hello, I'm Renz Adrian</h1>
+        <p>A beginner web developer & Vibe Coder.</p>
+        <button>Hire Me</button>
         </div>
     </section>
 
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I'm currently learning web development and building projects
-      to improve my skills.</p>
+        <p>I'm currently learning web development and building projects to improve my skills.</p>
     </section>
 
     <section id="skills" class="section">
         <h2>Skills</h2>
-
         <div class="skills-container">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">C#</div>
-            <div class="card">C++</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">C#</div>
+        <div class="card">C++</div>
         </div>
     </section>
 
     <section id="projects" class="section">
         <h2>Projects</h2>
-
         <div class="projects-container">
+        <div class="project-card">
+            <h3>Lost & Found System</h3>
+            <p>Windows Form app using C# and MySQL</p>
+        </div>
 
-            <div class="project-card">
-                <h3>Lost & Found System</h3>
-                <p>Windows Form app using C# and MySQL</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Responsive Website</h3>
-                <p>A mobile friendly portfolio website</p>
-            </div>
-            
+        <div class="project-card">
+            <h3>Responsive Website</h3>
+            <p>A mobile friendly portfolio website</p>
+        </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <h2>Contact</h2>
-
         <p>Email: renzalana33@gmail.com</p>
     </section>
-    
 
     <button id="topBtn" onclick="scrollToTop()">↑</button>
 
     <script src="script.js"></script>
-    
+
 </body>
 </html>

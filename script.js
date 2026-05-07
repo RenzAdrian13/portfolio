@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const topBtn = document.getElementById("topBtn");
+  const navLinks = document.getElementById("navLinks");
+  const menuToggle = document.querySelector(".menu-toggle");
 
   window.addEventListener("scroll", function () {
-  const topBtn = document.getElementById("topBtn");
-
-  if (window.scrollY > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-});
+    if (window.scrollY > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
 
   window.scrollToTop = function () {
     window.scrollTo({
@@ -19,20 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-});
+  window.toggleMenu = function () {
+    navLinks.classList.toggle("show");
+    menuToggle.classList.toggle("active");
+  };
 
-function toggleMenu(){
-  const nav = document.getElementById("navLinks");
-  nav.classList.toggle("show");
-}
-
-const navLinks = document.getElementById("navLinks");
-const menuToggle = document.querySelector(".menu-toggle");
-
-// close menu when a link is clicked
-document.querySelectorAll("#navLinks a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-    menuToggle.classList.remove("active");
+  document.querySelectorAll("#navLinks a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+      menuToggle.classList.remove("active");
+    });
   });
+
 });
