@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
       topBtn.style.display = "block";
+      topBtn.style.visibility = "visible";
     } else {
       topBtn.style.display = "none";
+      topBtn.style.visibility = "hidden";
     }
   });
 
