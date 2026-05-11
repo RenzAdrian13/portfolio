@@ -30,6 +30,10 @@ nav{
   color: #4caf50;
 }
 
+#actionBtn{
+    visibility: hidden;
+}
+
 nav ul{
     display: flex;
     list-style: none;
